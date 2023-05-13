@@ -41,3 +41,7 @@ function playSound() {
         oscillator.stop();
     },1000);
 }
+
+// going to see about possibly creating a .env for the 64bit? 
+// adding more sound files is next
+// have to think of interactivity and animations
