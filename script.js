@@ -30,16 +30,19 @@ const button2= document.getElementById('button2');
 button2.addEventListener('click', playSound);
 
 function playSound() {
+
     // creates an audio node that generates a tone
     const oscillator = audioCtx.createOscillator();
+
     // built in audio method destination sends the sound to a device Ex: computer speakers;
     oscillator.connect(audioCtx.destination);
+
     // type changes the type of wave form oscillator will output (sine, square, sawtooth, triangle)
-    oscillator.type = 'triangle';
+    oscillator.type = 'sine';
     oscillator.start();
     setTimeout(function(){
         oscillator.stop();
-    },1000);
+    },500);
 }
 
 // going to see about possibly creating a .env for the 64bit? 
