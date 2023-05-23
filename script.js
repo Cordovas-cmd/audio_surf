@@ -73,3 +73,6 @@ container.addEventListener('click', function () {
     }
     animate();
 })
+
+// need to add a .env and add this super long variable to that instead... 
+// want to add new sounds and a mix with animation
